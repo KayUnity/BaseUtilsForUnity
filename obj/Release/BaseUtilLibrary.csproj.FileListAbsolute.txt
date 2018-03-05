@@ -1,0 +1,6 @@
+F:\Engine\SceneConstructor\BaseUtilLibrary\obj\Release\BaseUtilLibrary.csprojResolveAssemblyReference.cache
+F:\Engine\SceneConstructor\BaseUtilLibrary\bin\Release\BaseUtilLibrary.dll
+F:\Engine\SceneConstructor\BaseUtilLibrary\bin\Release\BaseUtilLibrary.pdb
+F:\Engine\SceneConstructor\BaseUtilLibrary\bin\Release\UnityEngine.dll
+F:\Engine\SceneConstructor\BaseUtilLibrary\obj\Release\BaseUtilLibrary.dll
+F:\Engine\SceneConstructor\BaseUtilLibrary\obj\Release\BaseUtilLibrary.pdb

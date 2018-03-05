@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41E1A150-A8D2-40FF-B536-F2CF67929C3B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaseUtilLibrary</RootNamespace>
+    <AssemblyName>BaseUtilLibrary</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>libs\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KayAlgorithm\algorithm\2d\ALGBVHTree2.cs" />
+    <Compile Include="KayAlgorithm\algorithm\2d\ALGConvexPolygonDeompose.cs" />
+    <Compile Include="KayAlgorithm\algorithm\2d\ALGEarClipping.cs" />
+    <Compile Include="KayAlgorithm\algorithm\2d\ALGGJKEPA2.cs" />
+    <Compile Include="KayAlgorithm\algorithm\2d\ALGHMWaypoint.cs" />
+    <Compile Include="KayAlgorithm\algorithm\2d\ALGImageSkeleton.cs" />
+    <Compile Include="KayAlgorithm\algorithm\2d\ALGJarvisConvex.cs" />
+    <Compile Include="KayAlgorithm\algorithm\2d\ALGPolygonScanning.cs" />
+    <Compile Include="KayAlgorithm\algorithm\2d\ALGRectPartion.cs" />
+    <Compile Include="KayAlgorithm\algorithm\2d\ALGVoronoiGraph.cs" />
+    <Compile Include="KayAlgorithm\algorithm\2d\ALGVoronoiGraphFast.cs" />
+    <Compile Include="KayAlgorithm\algorithm\3d\ALGBVHTree3.cs" />
+    <Compile Include="KayAlgorithm\algorithm\3d\ALGGJKEPA3.cs" />
+    <Compile Include="KayAlgorithm\algorithm\3d\ALGKDTree.cs" />
+    <Compile Include="KayAlgorithm\algorithm\3d\ALGOcclusionCulling.cs" />
+    <Compile Include="KayAlgorithm\algorithm\3d\ALGQuickHull.cs" />
+    <Compile Include="KayAlgorithm\algorithm\BVHTree\BVHTree.cs" />
+    <Compile Include="KayAlgorithm\algorithm\BVHTree\object\BVHAABB2Object.cs" />
+    <Compile Include="KayAlgorithm\algorithm\BVHTree\object\BVHAABB3Object.cs" />
+    <Compile Include="KayAlgorithm\algorithm\BVHTree\object\BVHBaseObject.cs" />
+    <Compile Include="KayAlgorithm\algorithm\BVHTree\object\BVHSegment2Object.cs" />
+    <Compile Include="KayAlgorithm\algorithm\BVHTree\object\BVHTriangle2Object.cs" />
+    <Compile Include="KayAlgorithm\algorithm\BVHTree\object\BVHTriangle3Object.cs" />
+    <Compile Include="KayAlgorithm\algorithm\graph\ALGBipartiteMatch.cs" />
+    <Compile Include="KayAlgorithm\algorithm\ml\ALGFPGrowth.cs" />
+    <Compile Include="KayAlgorithm\algorithm\ml\ALGGroupClosest.cs" />
+    <Compile Include="KayAlgorithm\algorithm\ml\ALGGroupHash.cs" />
+    <Compile Include="KayAlgorithm\algorithm\ml\ALGKMeansPlus.cs" />
+    <Compile Include="KayAlgorithm\algorithm\pathfinder\ALGAStar.cs" />
+    <Compile Include="KayAlgorithm\algorithm\pathfinder\ALGBFS.cs" />
+    <Compile Include="KayAlgorithm\algorithm\pathfinder\ALGDijkstra.cs" />
+    <Compile Include="KayAlgorithm\algorithm\pathfinder\ALGSteer.cs" />
+    <Compile Include="KayAlgorithm\GeoAlgorithmUtils.cs" />
+    <Compile Include="KayAlgorithm\README.cs" />
+    <Compile Include="KayAlgorithm\utils\AlgorithmFileUtils.cs" />
+    <Compile Include="KayAlgorithm\utils\MeshBorderFind.cs" />
+    <Compile Include="KayAlgorithm\utils\MeshVertexMerge.cs" />
+    <Compile Include="KayDatastructure\DoubleCircleLinkedList.cs" />
+    <Compile Include="KayDatastructure\KeyedPriorityQueue.cs" />
+    <Compile Include="KayMath\extent\Matrix2x2.cs" />
+    <Compile Include="KayMath\extent\Vector2i.cs" />
+    <Compile Include="KayMath\extent\Vector3Extension.cs" />
+    <Compile Include="KayMath\geometric\GeoAABB.cs" />
+    <Compile Include="KayMath\geometric\GeoBezier.cs" />
+    <Compile Include="KayMath\geometric\GeoBSpline.cs" />
+    <Compile Include="KayMath\geometric\GeoCapsule.cs" />
+    <Compile Include="KayMath\geometric\GeoCircle.cs" />
+    <Compile Include="KayMath\geometric\GeoCylinder.cs" />
+    <Compile Include="KayMath\geometric\GeoEllipse.cs" />
+    <Compile Include="KayMath\geometric\GeoLine.cs" />
+    <Compile Include="KayMath\geometric\GeoMesh.cs" />
+    <Compile Include="KayMath\geometric\GeometricObject.cs" />
+    <Compile Include="KayMath\geometric\GeoNurbs.cs" />
+    <Compile Include="KayMath\geometric\GeoPlane.cs" />
+    <Compile Include="KayMath\geometric\GeoPointsArray.cs" />
+    <Compile Include="KayMath\geometric\GeoPolygon.cs" />
+    <Compile Include="KayMath\geometric\GeoRay.cs" />
+    <Compile Include="KayMath\geometric\GeoSegment.cs" />
+    <Compile Include="KayMath\geometric\GeoSphere.cs" />
+    <Compile Include="KayMath\geometric\GeoTriangle.cs" />
+    <Compile Include="KayMath\matrix\MatrixUtils.cs" />
+    <Compile Include="KayMath\README.cs" />
+    <Compile Include="KayMath\utils\GeoAABBUtils.cs" />
+    <Compile Include="KayMath\utils\GeoCircleUtils.cs" />
+    <Compile Include="KayMath\utils\GeoClipUtils.cs" />
+    <Compile Include="KayMath\utils\GeoLineUtils.cs" />
+    <Compile Include="KayMath\utils\GeoPlaneUtils.cs" />
+    <Compile Include="KayMath\utils\GeoPolygonUtils.cs" />
+    <Compile Include="KayMath\utils\GeoRayUtils.cs" />
+    <Compile Include="KayMath\utils\GeoSegmentUtils.cs" />
+    <Compile Include="KayMath\utils\GeoTangentUtils.cs" />
+    <Compile Include="KayMath\utils\GeoTriangleUtils.cs" />
+    <Compile Include="KayMath\utils\GeoUtils.cs" />
+    <Compile Include="KayNetwork\NetworkClient.cs" />
+    <Compile Include="KayNetwork\NetworkCommand.cs" />
+    <Compile Include="KayNetwork\NetworkCppClient.cs" />
+    <Compile Include="KayNetwork\NetworkHeadFormat.cs" />
+    <Compile Include="KayNetwork\NetworkMessage.cs" />
+    <Compile Include="KayNetwork\NetworkPacket.cs" />
+    <Compile Include="KayNetwork\NetworkSynClient.cs" />
+    <Compile Include="KayNetwork\Test\JGNetwork.cs" />
+    <Compile Include="KayNetwork\Test\NetCommand.cs" />
+    <Compile Include="KayUtils\EnumConvertUtils.cs" />
+    <Compile Include="KayUtils\event\EventDispatcher.cs" />
+    <Compile Include="KayUtils\event\EventException.cs" />
+    <Compile Include="KayUtils\RandomUtils.cs" />
+    <Compile Include="KayUtils\timer\TimerData.cs" />
+    <Compile Include="KayUtils\timer\TimerFrameHeap.cs" />
+    <Compile Include="KayUtils\timer\TimerHeap.cs" />
+    <Compile Include="KayUtils\XmlFileUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo F | xcopy $(TargetPath) $(SolutionDir)Assets\Plugins\$(TargetFileName)
+echo A | xcopy $(TargetPath) $(SolutionDir)Assets\Plugins\$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
